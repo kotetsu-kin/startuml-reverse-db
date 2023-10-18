@@ -1,0 +1,44 @@
+{
+  "name": "kkrisz1.staruml-reverse-db",
+  "title": "Entity Relationship DataModel Generation",
+  "description": "ERD Generation Extension for StarUML v5",
+  "homepage": "https://github.com/kkrisz1/staruml-reverse-db",
+  "issues": "https://github.com/kkrisz1/staruml-reverse-db/issues",
+  "keywords": [
+    "schema",
+    "erd",
+    "database"
+  ],
+  "version": "2.1.7",
+  "author": {
+    "name": "Krisztián Kurucz",
+    "email": "krisz.bme.vik@gmail.com",
+    "url": "https://github.com/kkrisz1"
+  },
+  "scripts": {
+    "test": "npm run test-jest",
+    "test-jest": "jest --detectOpenHandles --forceExit --passWithNoTests --coverage --coverageReporters=lcov",
+    "preversion": "npm test",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags",
+    "release:patch": "npm version patch -m \"[release] %s\"",
+    "release:minor": "npm version minor -m \"[release] %s\"",
+    "release:major": "npm version major -m \"[release] %s\""
+  },
+  "license": "GPLv3",
+  "engines": {
+    "staruml": ">=5.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "mssql": "^9.1.1",
+    "mysql2": "^3.3.0",
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {
+    "electron": "^18.3.7",
+    "jest": "^29.5.0",
+    "jest-ajv": "^1.0.3",
+    "spectron": "^19.0.0"
+  }
+}

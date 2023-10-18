@@ -1,0 +1,68 @@
+{
+  "id": "db.mssql",
+  "name": "MS SQL Server",
+  "schema": {
+    "db.mssql.connection": {
+      "text": "Database Connection",
+      "type": "section"
+    },
+    "db.mssql.connection.username": {
+      "text": "Username",
+      "description": "Username for database connection.",
+      "type": "string",
+      "default": ""
+    },
+    "db.mssql.connection.password": {
+      "text": "Password",
+      "description": "Password for database connection.",
+      "type": "string",
+      "default": ""
+    },
+    "db.mssql.connection.server": {
+      "text": "Server IP",
+      "description": "IP address of the database server.",
+      "type": "string",
+      "default": "localhost"
+    },
+    "db.mssql.connection.owner": {
+      "text": "Table Schema (Database Schema)",
+      "description": "Table Schema (Database Schema)",
+      "type": "string",
+      "default": ""
+    },
+    "db.mssql.connection.options": {
+      "text": "Database Connection",
+      "type": "section"
+    },
+    "db.mssql.connection.options.port": {
+      "text": "Server Port",
+      "description": "Port number to access the database server.",
+      "type": "number",
+      "default": 1433
+    },
+    "db.mssql.connection.options.database": {
+      "text": "Table Catalog (Database)",
+      "description": "Table Catalog (Database)",
+      "type": "string",
+      "default": ""
+    },
+    "db.mssql.connection.options.ssl": {
+      "text": "SSL",
+      "description": "Enable SSL",
+      "type": "check",
+      "default": false
+    },
+    "db.mssql.connection.options.trustServerCertificate": {
+      "text": "Trust Server Certificate",
+      "description": "Trust Server Certificate",
+      "type": "check",
+      "default": false
+    },
+    "db.mssql.connection.options.logging": {
+      "text": "Logging",
+      "description": "Logging",
+      "type": "check",
+      "default": false
+    }
+  }
+}
